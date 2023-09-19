@@ -28,6 +28,7 @@ function show(collegeName){
         console.log(clgname.name);
         let li = document.createElement("li");
         li.innerText = clgname.name;
+        li.style.display="block";
         list.appendChild(li);
     }
 }

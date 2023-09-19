@@ -1,3 +1,70 @@
-*{
+/* poppins font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color: #fff;
+    --font-color: #279EFF;
+    --background-color: #0C356A;
+    --day-background-color: #F1EFEF;
+    --day-color: #000;
+}
+
+.header {
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    height: 50px;
+}
+
+.logo {
+    width: 50%;
+    padding: 1rem;
+    color: #279EFF;
+}
+
+.nav {
+    width: 50%;
+
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    cursor: pointer;
+    text-align: center;
+    list-style: none;
+    padding-right: 1rem;
+    
+}
+
+.nav ul li:hover {
+    color: var(--font-color);
+}
+.nav ul li a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+.nav ul li::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    color: var(--font-color);
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
 }
